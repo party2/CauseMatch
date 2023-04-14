@@ -110,7 +110,7 @@ form .txt_feild{
 
 .txt_feild label{
     position: absolute;
-    top: 50%;
+    top: 15%;
     /* left: 5px; */
     color: #adadad;
     transform: translateY(-50%);
@@ -131,9 +131,13 @@ form .txt_feild{
     transition: .2s;
 }
 
-.txt_feild input:focus ~ label, .txt_feild input:valid ~ label{
-    top: -5px; 
+
+/* .txt_feild input:focus ~ label, .txt_feild input:valid{
     color: #67a600;
+} */
+
+.txt_feild input:focus ~ span::before, .txt_feild input:valid ~ span::before{
+    width: 100%;
 }
 
 .other{
@@ -153,9 +157,7 @@ form .txt_feild{
 
 
 
-.txt_feild input:focus ~ span::before, .txt_feild input:valid ~ span ::before{
-    width: 100%;
-}
+
 
 .pass a{
     
